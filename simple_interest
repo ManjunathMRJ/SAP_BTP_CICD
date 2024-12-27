@@ -1,0 +1,19 @@
+# Function to calculate simple interest
+def calculate_simple_interest(principal, rate, time):
+    """
+    Calculate simple interest using the formula:
+    Interest = Principal * Rate * Time
+    """
+    interest = (principal * rate * time) / 100
+    return interest
+
+# Example usage
+principal_amount = 1000  # Principal amount in dollars
+annual_rate = 5  # Annual interest rate in percentage
+time_period = 3  # Time period in years
+
+# Calculate simple interest
+interest = calculate_simple_interest(principal_amount, annual_rate, time_period)
+
+# Display the result
+print(f"The simple interest for a principal amount of ${principal_amount} at an annual rate of {annual_rate}% for {time_period} years is ${interest:.2f}")
